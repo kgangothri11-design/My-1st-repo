@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>HTML with CSS and JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: aqua;
+            color: coral;
+        }
+        h1 {
+            color: blue;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: coral;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: lightgreen;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Interactive Page</h1>
+    <p>This is a demonstration of HTML, CSS, and JavaScript working together.</p>
+    <button id="myButton">Click Me!</button>
+    <div id="message"></div>
+
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            document.getElementById('message').textContent = 'Button clicked! JavaScript is active.';
+            document.getElementById('message').style.color = '#007bff'; // Change color with JS
+        });
+    </script>
+</body>
+</html>
